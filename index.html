@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Calculadora - ProMax</title>
+</head>
+<body>
+    <main class="container">
+        <form name="Calculadora">
+            <!-- Inicio -->
+            <input type="text" name="resultado" id="resp" disabled>
+            <input type="text" name="limpar" id="clean" value="C" onclick="location.reload()"><br>
+            <!-- Fim do Inicio -->
+            <!-- Teclas -->
+            <input type="button" class="num div" value="/" name="divbtn" onclick="displaynum(divbtn.value)">
+            <input type="button" class="num par" value="(" name="par1btn" onclick="displaynum(par1btn.value)">
+            <input type="button" class="num par" value=")" name="par2btn" onclick="displaynum(par2btn.value)">
+            <input type="button" class="num multi" value="*" name="multibtn" onclick="displaynum(multibtn.value)"><br>
+            <input type="button" class="num numb" value="7" name="btn7" onclick="displaynum(btn7.value)">
+            <input type="button" class="num numb" value="8" name="btn8" onclick="displaynum(btn8.value)">
+            <input type="button" class="num numb" value="9" name="btn9" onclick="displaynum(btn9.value)">
+            <input type="button" class="num menos" value="-" name="subtbtn" onclick="displaynum(subtbtn.value)"><br>
+            <input type="button" class="num numb" value="4" name="btn4" onclick="displaynum(btn4.value)">
+            <input type="button" class="num numb" value="5" name="btn5" onclick="displaynum(btn5.value)">
+            <input type="button" class="num numb" value="6" name="btn6" onclick="displaynum(btn6.value)">
+            <input type="button" class="num mais" value="+" name="addbtn" onclick="displaynum(addbtn.value)"><br>
+            <input type="button" class="num numb" value="1" name="btn1" onclick="displaynum(btn1.value)">
+            <input type="button" class="num numb" value="2" name="btn2" onclick="displaynum(btn2.value)">
+            <input type="button" class="num numb" value="3" name="btn3" onclick="displaynum(btn3.value)">
+            <input type="button" class="num virgula" value="," name="virgbtn" onclick="displaynum(virgbtn.value)"><br>
+            <input type="button" class="num ponto" value="." name="pontbtn" onclick="displaynum(pontbtn.value)">
+            <input type="button" class="num numb" value="0" name="btn0" onclick="displaynum(btn0.value)">
+            <input type="button" class="num igual" value="=" name="eqlbtn" onclick="resultado.value=eval(resultado.value)">
+        </form>
+    </main>
+
+    <script>
+        function displaynum(n1){
+            Calculadora.resultado.value = Calculadora.resultado.value + n1;
+        }
+    </script>
+</body>
+</html>

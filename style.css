@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body{
+    background: linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+    linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+    background-color: #708090;
+    background-size: 64px 128px;
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    padding: 10px 40px 10px 40px;
+}
+input{
+    padding: 20px;
+    outline: none;
+    font-size: 14pt;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+#resp{
+    width: 210px;
+}
+#clean{
+    font-size: 18px;
+    width: 60px;
+    height: 15%;
+}
+
+.num{
+    color: #fff;
+    background-color: gray;
+}
+.numb{
+    color: #fff;
+    background: #0059;
+    font-size: 2em;
+    font-family: 'Poppins';
+}
+.igual{
+    width: 135px;
+}
